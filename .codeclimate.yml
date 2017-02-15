@@ -15,6 +15,14 @@ engines:
         enabled: false
       xss_to_json:
         enabled: false
+      mass_assign_call:
+        enabled: false
+      dangerous_attr_accessible:
+        enabled: false
+      unsafe_constantize:
+        enabled: false
+      regex_dos:
+        enabled: false
   eslint:
     enabled: false  
   csslint:
