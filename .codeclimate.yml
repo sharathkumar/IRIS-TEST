@@ -6,7 +6,6 @@ engines:
     #   enabled: false
   brakeman:
     enabled: true
-    # ... CONFIG CONTENT ...
     checks:
       no_attr_accessible:
         enabled: false
