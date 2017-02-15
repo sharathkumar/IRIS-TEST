@@ -10,6 +10,12 @@ engines:
     checks:
       no_attr_accessible:
         enabled: false
+      open_redirect:
+        enabled: false
+      sql_injection:
+        enabled: false
+      xss_to_json:
+        enabled: false
   eslint:
     enabled: false  
   csslint:
