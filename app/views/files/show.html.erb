@@ -14,11 +14,11 @@
   </div>
 <% else %>
   <h2><%= @attachment.display_name %></h2>
-  <div>
+  <!-- <div>
     <span style="font-size: 1.2em;">
-      <%= link_to "Download #{@attachment.display_name}", download_url %>
-    </span> (<%= @attachment.readable_size %>)
-  </div>
+      <%#= link_to "Download #{@attachment.display_name}", download_url %>
+    </span> (<%#= @attachment.readable_size %>)
+  </div> -->
   <% if @attachment.content_type == "application/x-shockwave-flash" %>
     <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" class="embedded_swf">
       <param name="movie" value="<%= safe_domain_file_url(@attachment) %>" />

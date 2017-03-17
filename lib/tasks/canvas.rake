@@ -119,6 +119,10 @@ namespace :canvas do
     puts "Finished compiling assets in #{real_time}. parallelism saved #{combined_time - real_time} (#{real_time.to_f / combined_time.to_f * 100.0}%)"
 
     log_time("gulp rev") { Rake::Task['js:gulp_rev'].invoke }
+    # tasks.map do |name, fn|
+    #  puts "running #{name}"
+    #  fn.call
+    # end
   end
 
   desc "Just compile css and js for development"
