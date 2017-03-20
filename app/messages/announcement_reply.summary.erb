@@ -6,4 +6,4 @@
   <%= t :subject, "New Comment on Announcement: %{discussion_topic}: %{course}", :discussion_topic => asset.title, :course => asset.context.name %>
 <% end %>
 
-<%= CanvasTextHelper.truncate_text(html_to_text(asset.message, :base_url => dashboard_url), :max_length => 200) %>
+<%= IristutorTextHelper.truncate_text(html_to_text(asset.message, :base_url => dashboard_url), :max_length => 200) %>

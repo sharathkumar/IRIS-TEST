@@ -15,5 +15,4 @@
 <p><%= t :body, "A page has been updated on the wiki for %{title} that may make your life easier.", :title => asset.context.name %></p>
 
 <p><strong><%= html_to_text(asset.title).titleize %></strong></p>
-
 <p><%= html_to_text(asset.body, :base_url => dashboard_url) %></p>
